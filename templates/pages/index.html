@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body class="index-bd" >
+    {% include 'parts/navbar.html' %}
+    {% block content %}
+
+        <!-- <a href="https:/www.facebook.com" target="_blank"><img src="{% static 'image/1.jpg' %}" alt="pic" width="300px"></a>
+        <a href="https:/www.google.com" target="_blank" ><button>click me</button></a> -->
+
+    <div class="head-area contaoner">
+    <h1>Welcom To My Site</h1>
+
+    <p>
+    <strong>
+        אינסטגרם היא אחת הרשתות החברתית הנפוצות ביותר בעולם, עם מספר גדל של משתמשים באופן עקבי. יותר ויותר צעירים מחוברים לאינסטגרם, ובשימוש מושכל ונכון היא יכולה להפוך לכלי שיווקי עוצמתי ביותר עם חשיפה נכונה וממוקדת.המדיה החברתית התגנבה לחיינו לאט לאט עד שהפכה להיות מוקד חיינו. כיום המוני אנשים משתמשים בה על בסיס יומיומי, לרבות עסקים. למעשה המדיה החברתית חוללה מהפך בדרך בה אנו משווקים וכאשר האסטרטגיה נכונה ומתנהלת ביד רמה
+    </p>
+    </div>
+
+    <div align = 'right' class="sec-tiktok contaoner"> 
+        <h4> : טיקטוק</h4>
+        <p>
+        איפה שכל הצעירים נמצאים. נלמד מה הופך את סרטוני הוידאו הקצרים לכל כך פופולאריים. נבין איך לעשות שימוש מתאים בהאשטגים שיעזרו לכם לייצר בולטות ברשת החברתית הפורחת עם סרטונים רלוונטיים עבור העסק שלכם.
+        </p>
+    </div>
+
+    <div align = 'right' class="sec-instagram contaoner">  
+        <h4> : אינסטגרם</h4>
+        <p>
+        בארבע מילים: יצירת תוכן באמצעות תמונות. בקורס נכיר איך מנהלים עמוד אינסטגרם כך שהמוצר שלכם ייחשף כמה שיותר. נלמד כמה כלים בסיסיים לעיצוב תמונות שכל אחת ואחד יכול לעשות בהם שימוש בקלות גם אם הוא לא מעצב גרפי. שילוב בין עיצוב, כתיבה וקריאייטיב מדויק ישדרגו את עמוד האינסטגרם מאוד.
+    </p>
+    </div>
+
+
+    <div align = 'right' class="sec-facebook contaoner">
+        <h4> : פייסבוק </h4>        
+        <p>
+            כמעט כל עסק שמוכר מוצר או שירות נמצא בפייסבוק. לא משנה כמה פעמים הספידו את הרשת החברתית המזקינה ובכל זאת היא חיה ובועטת מתמיד. העמודים העסקיים בפייסבוק מהווים נדבך מרכזי בכל פעילות שיווקית של עסק כשהדגש הוא על בניית אסטרטגיית תוכן מתאימה, עיצוב גרפי פשוט ומותאם לפלטפורמה כשהמטרה היא להגיע אל הקהל, להניע אותו לפעולה ולענות לו על שאלות הקשורות במותג שאתם מקדמים. 
+        </p>
+    </div><br><br><br>
+
+
+{% endblock content %}
+{% include 'parts/footer.html' %}
+    
+</body>
+</html>

@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+     <head>
+     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+     <title>מחאמיד מחמוד פרוייקט 1</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,
+     intial-scale=1.0">    
+     </head>
+
+     <body class="body">
+
+          {% include 'parts/navbar.html' %}
+          {% block content %}
+
+          <header class="mainheader container" >
+               <img src="{% static 'image/2.jpg' %}">
+
+          </header>
+<!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+     <div class="mainContent " align = 'right '>
+          <section class="top-content">
+               <header>
+                    <h2><a href="#"> ? מה זה פייתון</a></h2>
+               </header>
+               <footer>
+                    <p class="post-info">כתבה של : מחאמיד מחמוד</p>
+               </footer>
+               <article>
+                    <p id="post-contant">
+                         <bdi> פייתון .היא שפת המחשב הצומחת בקצב המהיר ביותר, ונחשבת ביחד עם 
+                              JavaScript לשפה הפופולרית ביותר בקרב חברות ובין מתכנתים. השפה היא רב שימושית.
+                              משתמשים בה מפתחי תוכנה, כלכלנים, מדענים, מהנדסים, סטטיסטיקאים, מתמטיקאים, ומפתחי בינה מלאכותית. 
+                              מגוון השימושים בפייתון רחב, וכולל: פיתוח אתרי אינטרנט ואפליקציות, יצירת ממשקי משתמש,
+                              פרויקטים מדעיים והנדסיים, אנליזת מידע, ניהול שרתים, למידת מכונה, בינה מלאכותית, ועוד.</bdi>
+                    </p>
+                    </article>
+          </section>
+
+          <section class="top-content" align = 'right'>
+               <header>
+                    <h2><a href="#"> ? למה פייתון משמשת</a></h2>
+               </header>
+               <footer>
+                    <!-- <p class="post-info">כתבה של : מחאמיד מחמוד</p> -->
+               </footer>
+               <article>
+                    <p>
+                         <bdi>פייתון נחשבת ל"שפה עילית" - היא מושתתת על יסודות משפת  <bdi>C</bdi>
+                         אך מפשטת המון עקרונות ומכילה מנגנונים אוטומטיים שהופכים אותה להרבה יותר קריאה וחוסכים כתיבה רבה של קוד.
+                         . זאת אחת הסיבות העיקריות לפופולריות שלה וזה מה שהופך אותה לשפה המומלצת ביותר למתחילים. אז נכון, פייתון בעלת סינטקס קריא ונקי, ונחשבת
+                         קלה מאוד ללמידה ביחס לשפות אחרות, אבל אל תתנו לזה להטעות אתכם. מדובר בשפה חזקה מאוד בעלת יכולות חישוביות מטורפות והיא נחשבת כיום לכלי חובה בתחומי ה-big data, data science 
+                         ובינה מלאכותית, תחומים הדורשים ביצוע ניתוחים וחישובים מהירים על כמויות עצומות של מידע. מעבר לתחומים האלה שבהם פייתון מאוד דומיננטית
+                         , היא נמצאת בשימוש נרחב בתחומי הסטטיסטיקה, 
+                         פיתוח web  ואפליקציות (בעיקר צד שרת), רשתות ואפילו פיתוח ממשקים גרפיים. בניגוד לשפות רבות שנחשבות "ייעודיות" למטרה או תחום מסוימים, פייתון נחשבת ל-"General Purpose Language"
+                         שניתן ליצור איתה כמעט כל דבר, מפיתוח אתרים, אלגוריתמים למכוניות אוטונומיות ואפילו משחקי מחשב.</bdi>
+                    <br>
+                    <bdi> לפי אתר <bdi>  stackoverflow  </bdi>  שפת  פייתון כבר נחשבת מהמבוקשים ביותר :  </bdi><br>
+
+                    <span>JavaScript</span>
+                    <meter value="67.7" min="0" max="100"></meter>
+                    <br>
+                    <span>HTML/CSS</span>
+                    <meter value="63.1" min="0" max="100"></meter>
+                    <br>
+                    <span>SQL</span>
+                    <meter value="54.7" min="0" max="100"></meter>
+                    <br>
+                    <span>Python</span>
+                    <meter value="44.1" min="0" max="100"></meter>  
+                    <br>
+                    <span>Java</span>
+                    <meter value="40.2" min="0" max="100"></meter> 
+                    <br>
+                    <span>C#</span>
+                    <meter value="31.4" min="0" max="100"></meter> 
+                    <br>
+                    <br>
+                    </p>
+                    </article>
+          </section>
+          
+     </div>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+     <div>
+     <aside>
+          <article class="theSidebar" align = 'right'>
+          <h1><a href="#"> קוד פתוח</a></h1>
+
+          <P>
+               שפת פייתון היא פרויקט קוד פתוח כך שכל אחד יכול לתרום ולשפר אותה.
+                    בניגוד למוצרים "סגורים" פייתון היא מוצר שמתפתח, משתכלל ונהנה מתוספות והרחבות שיוצאות באופן קבוע.
+          </P>
+          </article>
+     </aside>
+
+     <aside>
+          <article class="theSidebar" align = 'right'>
+          <h1><a href="#"> קהילה עצומה</a></h1>
+
+          <P>
+               <bdi> בעיקר בזכות שני היתרונות הקודמים, מאחורי Python עומדת קהילה גדולה ומאוד פעילה. זה אומר שיש המון חומר בנושא וקל מאוד למצוא עזרה.
+                    יתרון נוסף של קהילה פעילה כזאת הוא</bdi>
+          </article>
+     </aside>
+     </div>
+          <!-- <aside>
+               <article class="theSidebar" align = 'right'>
+               <h1><a href="#"> מאגר ספריות עצום</a></h1>
+
+               <P>
+                    כל התקנה של פייתון מגיעה עם מאגר גדול מאוד של ספריות מובנות המשדרגות את 
+                    היכולות של השפה ומאפשרות פונקציונליות רבה במגוון עצום של תחומים. בנוסף לכך, כחלק מהיותה
+                     פרויקט קוד פתוח הנהנה מקהילה פעילה, קיימים מאגרים של אלפי ספריות נוספות שמפתחים שונים מסביב לעולם פיתחו ותרמו לטובת הכלל. 
+                    את הספריות האלה אתם יכולים להתקין (בחינם כמובן) כדי לקחת את יכולות התכנות שלכם אפיל רחוק יותר
+                    . אם יש משהו שאתם מנסים לעשות, סביר שמישהו כבר פיתח ספרייה בשביל זה.
+               </article>
+          </aside></br> -->
+<!--/////////////////////////////////////////////////////////////////////////////////////////////-->
+     <div>
+          <header class="downheader">
+               <iframe width= "70%" height="315" src="https://www.youtube.com/embed/y1hQZF3tgHA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </header>
+     </div>
+
+{% endblock content %}
+{% include 'parts/footer.html' %}
+
+</body>
+</html>
+
