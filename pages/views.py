@@ -41,8 +41,8 @@ def singin(request):
 
 
 
-def p_1(request):
-    return render(request ,'pages/p_1.html')
+def news(request):
+    return render(request ,'pages/news.html')
 
 
 

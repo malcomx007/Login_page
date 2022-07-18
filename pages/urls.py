@@ -10,5 +10,5 @@ urlpatterns = [
     path('about/', views.about , name='about'),
     path('singup/', views.singup , name='singup'),
     path('', views.singin , name='singin'),
-    path('p_1/', views.p_1 , name='p_1'),
+    path('news/', views.news , name='news'),
 ]
